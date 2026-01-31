@@ -1,48 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <link rel="stylesheet" href="styles.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Animation title</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    ul {
+      list-style-type: disc;
+    }
+  </style>
+</head>
 
-  <body>
-
-   
-  <h1 class="title"> Darren </h1>
-  <h1 class="title"> EJfjsedf </h1>
-
+<body>
   <header class="navigation-bar">
-    <a class="navigation-bar-text">Basic Information</a>
-    <a class="navigation-bar-text">Hobbies</a>
+    <a class="navigation-bar-text" href="#aboutme">About me </a>
+    <a class="navigation-bar-text" href="#hobbies">Hobbies</a>
     <a class="navigation-bar-text">Sports</a>
     <a class="navigation-bar-text">Subjects</a>
     <a class="navigation-bar-text">Personal Project</a>
+  </header>
 
-    <div class="image_box_1"></div>
-</header>
+  <div class="top-section">
+    <h1 class="title">Darren</h1>
+    <h1 class="title">Lui</h1>
+    <img class="arrow" src="arrow.png" alt="arrow">
+    <span class="animation-title"></span>
+    <span class="blinking-cursor">|</span>
+  </div>
 
-  <div class="top-section"></div>
-  <div class="bottom-section"></div>
+  <div class="bottom-section">
+    <div class="content-wrapper">
+      <a class="aboutme-heading-text" id="aboutme">About Me</a>
+      <ul>
+        <li class="aboutme-listed-text">Age: 15 years old </li>
+        <li class="aboutme-listed-text">Nationality: Chinese</li>
+        <li class="aboutme-listed-text">Passports: Hong Kong, Canada</li>
+        <li class="aboutme-listed-text">School: The ISF Academy</li>
+        <li class="aboutme-listed-text">Sibilings: Brother</li>
+        <li class="aboutme-listed-text">Favorite Subject: Computer Science</li>
+      </ul>
+      <div class="image-box1"></div>
+      <img class="aboutmepic" src="aboutmepicture.png" alt="Me">
+      <div class="image-box2"></div>
+      <a class="hobbies-heading-text" id="hobbies">Hobbies</a>
+      <ul>
+        <li class="hobbies-listed-text">Playing Basketball</li>
+        <li class="hobbies-listed-text">Watching Sports Games</li>
+        <li class="hobbies-listed-text">Watching Formula One</li>
+        <li class="hobbies-listed-text">Sleeping and Eating Food</li>
+        <li class="hobbies-listed-text">Collecting Sports Cards</li>
+        <img class="hobbiespic" src="hobbiespicture.png" alt="Cerdic Coward">
+      </ul>
+    </div>
+  </div>
 
-  <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Animation-title</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <span class="animation-title"></span>
-        <script src="https://unpkg.com/ityped@0.0.10"></script>
-      <script>
-            window.ityped.init(document.qguerySelector('.animation-title'),{
-                strings: ['Eating food','Play basketball','Watch football', 'Coding'],
-                loop: true,
-                typespeed: 100,
-                backSpeed: 100
-            })
-        </script>
-    </body>
+  <script src="https://unpkg.com/ityped@0.0.10"></script>
+  <script>
+    window.ityped.init(
+      document.querySelector('.animation-title'),
+      {
+        strings: ['Basketball Player','Computer Science Enthusiast','Enjoy Watching Sports', 'ISF G10 Student', 'Card Collector'],
+        loop: true,
+        typeSpeed: 120,
+        backSpeed: 50,
+        startDelay: 500,
+        backDelay: 500,
+        showCursor: false,
+        cursorChar: '|'
+      }
+    );
+  </script>
+</body>
 </html>
-
-  </body>
-</html>
-

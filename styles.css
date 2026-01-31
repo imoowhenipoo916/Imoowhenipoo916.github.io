@@ -4,67 +4,168 @@ html, body {
     font-family: "Montserrat", sans-serif;
 }
 
-.title{
-    text-align: center;
-    font-size: 67px;
-    transform: translateY(50px);
+.navigation-bar {
+  background-color: #5d5757;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  position: fixed;
+}
+
+.navigation-bar-text {
+  color: white;
+  font-family: "Google Sans", sans-serif;
+  font-size: 20px;
 }
 
 .top-section {
-    background-color: #4a90e2;
-    color: #333;
-    padding-bottom: 50px;
-    text-align: center;
-    width: 100%;
-    height: 500px
+  background: linear-gradient(0turn, #75a4f0, #ee7674);
+  color: #333;
+  text-align: center;
+  width: 100%;
+  height: 700px;
+  padding-top: 100px;
 }
+
+.arrow{
+    width: 125px; 
+    height: auto;         
+    position: absolute;    
+    left: 50%;             
+    top: 500px;       
+    transform: translateX(-50%);          
+  }
+
 
 .bottom-section {
-    background-color: rgb(196, 226, 74);
-    color: #333;
-    padding-bottom: 50px;
-    text-align: center;
-    width: 100%;
-    height: 800px
+  background-color: rgb(204, 255, 0);
+  color: #333;
+  text-align: center;
+  width: 100%;
+  height: 800px;
+  padding-top: 247px;
+  display: flex;  
+  justify-content: space-between;  
 }
 
-.animation-title{
-    position: absolute;
-    color: #0e0808;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold; 
-    font-size: 50px; 
+.title {
+  text-align: center;
+  font-size: 150px;
+  margin: 10px 0;
+  margin-top: 25px;
 }
 
-.navigation-bar{
-    background-color: #5d5757;
-    padding: 30px;
+.animation-title {
+  position: relative;
+  display: inline-block;
+  color: #0e0808;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 67px;
+  margin-top: 160px;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 100px;
+  color: #0e0808;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+.image-box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
+  margin-left: 500px;
+  transform: translateY(-425px)  
+}
+
+.aboutmepic{
+    width: 290px; 
+    height: auto;         
+    position: absolute;    
+    left: 50%;             
+    top: 856px;       
+    transform: translateX(-76%); 
+    border-radius: 20px 
+}
+
+.aboutme-heading-text {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  transform: translateY(-180px)  
+}
+
+.aboutme-listed-text {
+  color: black;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+  margin-left: 10px;
+  transform: translateY(-170px)  
+}
+
+.image-box2 {
     display: flex;
-    justify-content: center;
-    height: 15px;
-    gap: 40px; 
-    width: 100%;
-    margin-top: -300px;
-}
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 300px;
+    height: 277px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
+    margin-left: 650px;
+    transform: translateY(-375px)  
+  }
 
-.navigation-bar-text{
-    color: white; 
-    font-family: "Google Sans", sans-serif; 
+ .hobbies-heading-text{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 1295px;
+    transform: translateY(-660px)  
+  }
+
+  .hobbies-listed-text {
+    color: black;
     font-size: 20px;
-    transform: translateX(25px)
-}
-.image_box_1{
-    background-color: #d1cdcd;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 35px;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
-    width: 400px;
-    height: 300px;
-    margin: 50px auto; 
-    overflow: scroll;
-    margin-left: 325px;
-    transform: translateY(700px)
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+    margin-right: 10px;
+    transform: translateY(-650px)  
+  }
+  
+  .hobbiespic{
+    width: 290px; 
+    height: auto;         
+    position: absolute;    
+    right: 50%;             
+    top: 1210px;       
+    transform: translateX(75.5%); 
+    border-radius: 20px 
 }

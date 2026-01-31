@@ -10,3 +10,5 @@ My personal site.
 
 - [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - center content and create structure to the site
 - [Text typing animation](https://codepen.io/Malikova/pen/aPWObE) - Used as reference, changed values to suit my own website. 
+- [Cursor Blinker](https://codepen.io/ArtemGordinsky/pen/DgyQKy) - Used as reference, changed values to suit my own website
+- [Background colour](https://codepen.io/eqbrown/pen/ExMXLeP) - Used the background colour 
