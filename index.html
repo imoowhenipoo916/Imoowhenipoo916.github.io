@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Animation title</title>
+  <title>My Website</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     ul {
@@ -12,6 +12,13 @@
 </head>
 
 <body>
+  <div class="loader" id="loader" style="display:none;">
+    <div class="image">
+      <i class="fa fa-codepen"></i>
+    </div>
+    <span>Loading...</span>
+  </div>
+
   <header class="navigation-bar">
     <a class="navigation-bar-text" href="#aboutme">About me </a>
     <a class="navigation-bar-text" href="#hobbies">Hobbies</a>
@@ -23,18 +30,18 @@
   <div class="top-section">
     <h1 class="title">Darren</h1>
     <h1 class="title">Lui</h1>
-    <img class="arrow" src="arrow.png" alt="arrow">
+    <a href="#arrowdirector"><img class="arrow" src="arrow.png" alt="arrow"></a>
     <span class="animation-title"></span>
     <span class="blinking-cursor">|</span>
   </div>
 
   <div class="bottom-section">
-    <div class="content-wrapper">
+    <div class="divider">
       <a class="aboutme-heading-text" id="aboutme">About Me</a>
       <ul>
         <li class="aboutme-listed-text">Age: 15 years old </li>
         <li class="aboutme-listed-text">Nationality: Chinese</li>
-        <li class="aboutme-listed-text">Passports: Hong Kong, Canada</li>
+        <li class="aboutme-listed-text" id="arrowdirector">Passports: Hong Kong, Canada</li>
         <li class="aboutme-listed-text">School: The ISF Academy</li>
         <li class="aboutme-listed-text">Sibilings: Brother</li>
         <li class="aboutme-listed-text">Favorite Subject: Computer Science</li>
@@ -51,9 +58,14 @@
         <li class="hobbies-listed-text">Collecting Sports Cards</li>
         <img class="hobbiespic" src="hobbiespicture.png" alt="Cerdic Coward">
       </ul>
+      <a href="loadingscreen.html" class="basketball-link"><img class="basketballpic" src="basketball.png" alt="basketball"></a>
+      <div class="image-box3"></div>
+      <img class="right-arrow" src="rightarrow.png" alt="right arrow">
+      <h1 class="clickme">Click Me! </h1>
     </div>
   </div>
-
+  
+  
   <script src="https://unpkg.com/ityped@0.0.10"></script>
   <script>
     window.ityped.init(
@@ -70,5 +82,54 @@
       }
     );
   </script>
+  <script>
+    document.querySelectorAll('a[href="#arrowdirector"]').forEach(button => {  
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const section = document.getElementById('arrowdirector');
+        
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth'});
+        }
+      });
+    });
+    </script>    
+  <script>
+      document.querySelectorAll('a[href="#aboutme"]').forEach(button => {  
+        button.addEventListener('click', (e) => {
+          e.preventDefault();
+          const section = document.getElementById('aboutme');
+          
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth'});
+          }
+        });
+      });
+    </script> 
+  <script>
+    document.querySelectorAll('a[href="#hobbies"]').forEach(button => {  
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const section = document.getElementById('hobbies');
+        
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth'});
+        }
+      });
+    });
+  </script> 
+
+<div class="basketball-loader" id="basketball-loader" style="display: none;">
+  <div class="ball">
+    <div class="inner">
+      <div class="line"></div>
+      <div class="line line--two"></div>
+      <div class="oval"></div>
+      <div class="oval oval--two"></div>
+    </div>
+  </div>
+  <div class="shadow"></div>
+</div>
+    
 </body>
 </html>
