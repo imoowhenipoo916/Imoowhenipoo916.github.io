@@ -22,7 +22,7 @@
   <header class="navigation-bar">
     <a class="navigation-bar-text" href="#aboutme">About me </a>
     <a class="navigation-bar-text" href="#hobbies">Hobbies</a>
-    <a class="navigation-bar-text">Sports</a>
+    <a class="navigation-bar-text" href="#sports"">Sports</a>
     <a class="navigation-bar-text">Subjects</a>
     <a class="navigation-bar-text">Personal Project</a>
   </header>
@@ -60,8 +60,24 @@
       </ul>
       <a href="loadingscreen.html" class="basketball-link"><img class="basketballpic" src="basketball.png" alt="basketball"></a>
       <div class="image-box3"></div>
-      <img class="right-arrow" src="rightarrow.png" alt="right arrow">
+      <a class="sports-heading-text" id="sports">Sports Achievements:</a>
+      <ul>
+        <li class="sports-listed-text">U12 D2 ISSFHK Gold 🥇</li>
+        <li class="sports-listed-text">U14 D1 ISSFHK Silver 🥈</li>
+        <li class="sports-listed-text">C Grade D3 HKSSF Gold 🥇</li>
+        <li class="sports-listed-text">B Grade D3 HKSSF Bronze 🥉</li>
+        <li class="sports-listed-text">Sketch League Gold 🥇</li>
+      </ul>  
+      <img class="right-arrow" src="rightarrow.png" alt="right arrow"> 
       <h1 class="clickme">Click Me! </h1>
+      <a class="subjects-heading-text">DP Subjects</a>
+      <div class="subjects-container">
+        <div class="subject-box-1"></div>
+        <div class="subject-box-1"></div>
+        <div class="subject-box-1"></div>
+      </div>
+      
+
     </div>
   </div>
   
@@ -111,6 +127,18 @@
       button.addEventListener('click', (e) => {
         e.preventDefault();
         const section = document.getElementById('hobbies');
+        
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth'});
+        }
+      });
+    });
+  </script> 
+  <script>
+    document.querySelectorAll('a[href="#sports"]').forEach(button => {  
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        const section = document.getElementById('sports');
         
         if (section) {
           section.scrollIntoView({ behavior: 'smooth'});
