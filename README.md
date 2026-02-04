@@ -21,6 +21,7 @@ My personal site.
 - [Upload Fonts](https://www.w3schools.com/css/css3_fonts.asp) - Used to upload fonts
 - [Bitcount Single Font](https://fonts.google.com/specimen/Bitcount+Single?preview.text=Loading) - Font that I used
 - [Meta_Charset](https://www.w3schools.com/tags/att_meta_charset.asp) - I used it in each of my HTML to access the characters and symbols that I needed. 
-
+- [Loading Time](https://www.geeksforgeeks.org/html/how-to-redirect-to-another-webpage-in-html/) - I used it to set the laoding time for the loading screen, and used it to change to the second page. 
+- [Contact Me](https://codepen.io/salal-hayder/pen/vELLpwO) - Copied and Paste, changed values to suit my own website. 
 
 https://www.w3schools.com/css/css_display_visibility.asp

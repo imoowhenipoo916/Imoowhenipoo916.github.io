@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>My Website</title>
-  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="styles.css" />
   <style>
     ul {
       list-style-type: disc;
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-  <div class="loader" id="loader" style="display:none;">
+  <div class="loader" id="loader" style="display: none;">
     <div class="image">
       <i class="fa fa-codepen"></i>
     </div>
@@ -20,17 +21,21 @@
   </div>
 
   <header class="navigation-bar">
-    <a class="navigation-bar-text" href="#aboutme">About me </a>
+    <a class="navigation-bar-text" href="#aboutme">About me</a>
     <a class="navigation-bar-text" href="#hobbies">Hobbies</a>
-    <a class="navigation-bar-text" href="#sports"">Sports</a>
+    <a class="navigation-bar-text" href="#sports">Sports</a>
     <a class="navigation-bar-text">Subjects</a>
-    <a class="navigation-bar-text">Personal Project</a>
+    <a class="navigation-bar-text">Contacts</a>
   </header>
 
   <div class="top-section">
     <h1 class="title">Darren</h1>
     <h1 class="title">Lui</h1>
-    <a href="#arrowdirector"><img class="arrow" src="arrow.png" alt="arrow"></a>
+
+    <a href="#arrowdirector">
+      <img class="arrow" src="arrow.png" alt="arrow" />
+    </a>
+
     <span class="animation-title"></span>
     <span class="blinking-cursor">|</span>
   </div>
@@ -39,16 +44,18 @@
     <div class="divider">
       <a class="aboutme-heading-text" id="aboutme">About Me</a>
       <ul>
-        <li class="aboutme-listed-text">Age: 15 years old </li>
+        <li class="aboutme-listed-text">Age: 15 years old</li>
         <li class="aboutme-listed-text">Nationality: Chinese</li>
         <li class="aboutme-listed-text" id="arrowdirector">Passports: Hong Kong, Canada</li>
         <li class="aboutme-listed-text">School: The ISF Academy</li>
-        <li class="aboutme-listed-text">Sibilings: Brother</li>
+        <li class="aboutme-listed-text">Siblings: Brother</li>
         <li class="aboutme-listed-text">Favorite Subject: Computer Science</li>
       </ul>
+
       <div class="image-box1"></div>
-      <img class="aboutmepic" src="aboutmepicture.png" alt="Me">
+      <img class="aboutmepic" src="aboutmepicture.png" alt="Me" />
       <div class="image-box2"></div>
+
       <a class="hobbies-heading-text" id="hobbies">Hobbies</a>
       <ul>
         <li class="hobbies-listed-text">Playing Basketball</li>
@@ -56,10 +63,15 @@
         <li class="hobbies-listed-text">Watching Formula One</li>
         <li class="hobbies-listed-text">Sleeping and Eating Food</li>
         <li class="hobbies-listed-text">Collecting Sports Cards</li>
-        <img class="hobbiespic" src="hobbiespicture.png" alt="Cerdic Coward">
       </ul>
-      <a href="loadingscreen.html" class="basketball-link"><img class="basketballpic" src="basketball.png" alt="basketball"></a>
+
+      <img class="hobbiespic" src="hobbiespicture.png" alt="Cedric Coward" />
+      <a href="loadingscreen.html" class="basketball-link">
+        <img class="basketballpic" src="basketball.png" alt="basketball" />
+      </a>
+
       <div class="image-box3"></div>
+
       <a class="sports-heading-text" id="sports">Sports Achievements:</a>
       <ul>
         <li class="sports-listed-text">U12 D2 ISSFHK Gold 🥇</li>
@@ -67,97 +79,118 @@
         <li class="sports-listed-text">C Grade D3 HKSSF Gold 🥇</li>
         <li class="sports-listed-text">B Grade D3 HKSSF Bronze 🥉</li>
         <li class="sports-listed-text">Sketch League Gold 🥇</li>
-      </ul>  
-      <img class="right-arrow" src="rightarrow.png" alt="right arrow"> 
-      <h1 class="clickme">Click Me! </h1>
+      </ul>
+
+      <img class="right-arrow" src="rightarrow.png" alt="right arrow" />
+      <h1 class="clickme">Click Me!</h1>
+
       <a class="subjects-heading-text">DP Subjects</a>
+
       <div class="subjects-container">
         <div class="subject-box-1"></div>
         <div class="subject-box-1"></div>
         <div class="subject-box-1"></div>
       </div>
-      
 
+      <div class="subjects-text-container">
+        <div class="subject-text-box">
+          Computer Science<br />
+          <span class="highlight-yellow">HL</span>
+        </div>
+        <div class="subject-text-box">
+          Chinese B<span class="highlight-yellow">HL</span>
+        </div>
+        <div class="subject-text-box">
+          Economics<span class="highlight-yellow">HL</span>
+        </div>
+      </div>
+
+      <div class="subjects-container">
+        <div class="subject-box2"></div>
+        <div class="subject-box2"></div>
+        <div class="subject-box2"></div>
+      </div>
+
+      <div class="subjects-text-container">
+        <div class="subject-text-box2">
+          English A<br />
+          <span class="highlight-green">SL</span>
+        </div>
+        <div class="subject-text-box2">
+          Math AA<span class="highlight-green">SL</span>
+        </div>
+        <div class="subject-text-box2">
+          Physics<span class="highlight-green">SL</span>
+        </div>
+      </div>
     </div>
   </div>
-  
-  
+
   <script src="https://unpkg.com/ityped@0.0.10"></script>
+
   <script>
-    window.ityped.init(
-      document.querySelector('.animation-title'),
-      {
-        strings: ['Basketball Player','Computer Science Enthusiast','Enjoy Watching Sports', 'ISF G10 Student', 'Card Collector'],
-        loop: true,
-        typeSpeed: 120,
-        backSpeed: 50,
-        startDelay: 500,
-        backDelay: 500,
-        showCursor: false,
-        cursorChar: '|'
-      }
-    );
+    window.ityped.init(document.querySelector('.animation-title'), {
+      strings: [
+        'Basketball Player',
+        'Computer Science Enthusiast',
+        'Enjoy Watching Sports',
+        'ISF G10 Student',
+        'Card Collector'
+      ],
+      loop: true,
+      typeSpeed: 120,
+      backSpeed: 50,
+      startDelay: 500,
+      backDelay: 500,
+      showCursor: false,
+      cursorChar: '|'
+    });
   </script>
+
   <script>
-    document.querySelectorAll('a[href="#arrowdirector"]').forEach(button => {  
-      button.addEventListener('click', (e) => {
+    document.querySelectorAll('a[href="#arrowdirector"]').forEach(button => {
+      button.addEventListener('click', e => {
         e.preventDefault();
         const section = document.getElementById('arrowdirector');
-        
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth'});
-        }
+        if (section) section.scrollIntoView({ behavior: 'smooth' });
       });
     });
-    </script>    
-  <script>
-      document.querySelectorAll('a[href="#aboutme"]').forEach(button => {  
-        button.addEventListener('click', (e) => {
-          e.preventDefault();
-          const section = document.getElementById('aboutme');
-          
-          if (section) {
-            section.scrollIntoView({ behavior: 'smooth'});
-          }
-        });
+
+    document.querySelectorAll('a[href="#aboutme"]').forEach(button => {
+      button.addEventListener('click', e => {
+        e.preventDefault();
+        const section = document.getElementById('aboutme');
+        if (section) section.scrollIntoView({ behavior: 'smooth' });
       });
-    </script> 
-  <script>
-    document.querySelectorAll('a[href="#hobbies"]').forEach(button => {  
-      button.addEventListener('click', (e) => {
+    });
+
+    document.querySelectorAll('a[href="#hobbies"]').forEach(button => {
+      button.addEventListener('click', e => {
         e.preventDefault();
         const section = document.getElementById('hobbies');
-        
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth'});
-        }
+        if (section) section.scrollIntoView({ behavior: 'smooth' });
       });
     });
-  </script> 
-  <script>
-    document.querySelectorAll('a[href="#sports"]').forEach(button => {  
-      button.addEventListener('click', (e) => {
+
+    document.querySelectorAll('a[href="#sports"]').forEach(button => {
+      button.addEventListener('click', e => {
         e.preventDefault();
         const section = document.getElementById('sports');
-        
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth'});
-        }
+        if (section) section.scrollIntoView({ behavior: 'smooth' });
       });
     });
-  </script> 
+  </script>
 
-<div class="basketball-loader" id="basketball-loader" style="display: none;">
-  <div class="ball">
-    <div class="inner">
-      <div class="line"></div>
-      <div class="line line--two"></div>
-      <div class="oval"></div>
-      <div class="oval oval--two"></div>
+  <div class="basketball-loader" id="basketball-loader" style="display: none;">
+    <div class="ball">
+      <div class="inner">
+        <div class="line"></div>
+        <div class="line line--two"></div>
+        <div class="oval"></div>
+        <div class="oval oval--two"></div>
+      </div>
     </div>
+    <div class="shadow"></div>
   </div>
-  <div class="shadow"></div>
-</div>
-    
 </body>
 </html>
