@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
 
   <link rel="stylesheet" href="styles.css" />
@@ -12,24 +13,17 @@
   </style>
 </head>
 
-<body>
-  <div class="loader" id="loader" style="display: none;">
-    <div class="image">
-      <i class="fa fa-codepen"></i>
-    </div>
-    <span>Loading...</span>
-  </div>
 
   <header class="navigation-bar">
     <a class="navigation-bar-text" href="#aboutme">About me</a>
     <a class="navigation-bar-text" href="#hobbies">Hobbies</a>
     <a class="navigation-bar-text" href="#sports">Sports</a>
-    <a class="navigation-bar-text">Subjects</a>
-    <a class="navigation-bar-text">Contacts</a>
+    <a class="navigation-bar-text" href="#subjects"> Subjects</a>
+    <a class="navigation-bar-text" href="#contacts">Contacts</a>
   </header>
 
   <div class="top-section">
-    <h1 class="title">Darren</h1>
+    <h1 class="title" id="top">Darren</h1>
     <h1 class="title">Lui</h1>
 
     <a href="#arrowdirector">
@@ -71,6 +65,7 @@
       </a>
 
       <div class="image-box3"></div>
+      <img class="sportspic" src="sportspic.png" alt="Me sports picture" />
 
       <a class="sports-heading-text" id="sports">Sports Achievements:</a>
       <ul>
@@ -93,27 +88,28 @@
       </div>
 
       <div class="subjects-text-container">
-        <div class="subject-text-box">
-          Computer Science<br />
-          <span class="highlight-yellow">HL</span>
-        </div>
-        <div class="subject-text-box">
-          Chinese B<span class="highlight-yellow">HL</span>
-        </div>
-        <div class="subject-text-box">
-          Economics<span class="highlight-yellow">HL</span>
-        </div>
+        <div class="subject-text-box">Computer Science<br/>
+          <span class="highlight-yellow">HL</span></div>
+          <img class="computersciencepic" src="computerscience.png" alt="computerscience" />
+        <div class="subject-text-box">Chinese B
+          <span class="highlight-yellow">HL</span> </div>
+          <img class="chinesepic" src="chinese.png" alt="chinese" />
+        <div class="subject-text-box">Economics
+          <span class="highlight-yellow">HL</span></div>
+          <img class="economicspic" src="economics.png" alt="economics" />
       </div>
 
-      <div class="subjects-container">
+      <div class="subjects-container" id="subjects">
         <div class="subject-box2"></div>
+        <img class="englishpic" src="english.png" alt="english" />
         <div class="subject-box2"></div>
+        <img class="mathpic" src="math.png" alt="math" />
         <div class="subject-box2"></div>
+        <img class="physicspic" src="physics.png" alt="physics" />
       </div>
 
       <div class="subjects-text-container">
-        <div class="subject-text-box2">
-          English A<br />
+        <div class="subject-text-box2">English A<br/>
           <span class="highlight-green">SL</span>
         </div>
         <div class="subject-text-box2">
@@ -125,6 +121,37 @@
       </div>
     </div>
   </div>
+
+  <div class="contact-header-text">Contact Me! 
+  </div>
+
+<div class="contact-me-container" id="contacts">
+      <div class="contact-item">
+          <h3>Email and Phone Number</h3>
+          <p><a href="mailto:3015040@student.isf.edu.hk">3015040@student.isf.edu.hk</a></p>
+          <p><a href="mailto:darrenlui916@gmail.com">darrenlui916@gmail.com</a></p>
+          <p>+852 97603398</p>
+      </div>
+      
+      <div class="contact-item">
+        <h3>Social Media</h3>
+        <p>Friend me/Follow me!</p>
+        <div class="social-media-links">
+            <a href="https://www.instagram.com/darren_mancity/" target="https://www.instagram.com/darren_mancity/" class="social-media-buttons">
+                Instagram
+            </a>
+            <a href="https://discord.gg/Jenzpfxz" target="https://discord.gg/Jenzpfxz" class="social-media-buttons">
+                Discord
+            </a>
+            <a href="https://x.com/Imoowhenipoo_" target="https://x.com/Imoowhenipoo_" class="social-media-buttons">
+                Twitter
+            </a>
+        </div>
+    </div>
+    
+    <a href="#top"><img class="backtotop" src="backtotop.png" alt="Back to Top"></a>
+    <img src="backtotop.png" alt="Description of the image">
+    
 
   <script src="https://unpkg.com/ityped@0.0.10"></script>
 
@@ -179,6 +206,22 @@
         if (section) section.scrollIntoView({ behavior: 'smooth' });
       });
     });
+
+    document.querySelectorAll('a[href="#subjects"]').forEach(button => {
+      button.addEventListener('click', e => {
+        e.preventDefault();
+        const section = document.getElementById('subjects');
+        if (section) section.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    document.querySelectorAll('a[href="#contacts"]').forEach(button => {
+      button.addEventListener('click', e => {
+        e.preventDefault();
+        const section = document.getElementById('contacts');
+        if (section) section.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
   </script>
 
   <div class="basketball-loader" id="basketball-loader" style="display: none;">
@@ -192,5 +235,10 @@
     </div>
     <div class="shadow"></div>
   </div>
+
+
 </body>
 </html>
+
+
+
