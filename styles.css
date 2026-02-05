@@ -4,6 +4,7 @@ html, body {
   font-family: "Montserrat", sans-serif;
   }
   
+  /* Navigation Bar CSS */
   .navigation-bar {
     background-color: #5d5757;
     padding: 20px;
@@ -16,35 +17,48 @@ html, body {
   }
   
   .navigation-bar-text {
-  color: white;
-  font-family: "Google Sans", sans-serif;
-  font-size: 20px;
-  z-index: 50
+    color: white;
+    font-family: "Google Sans", sans-serif;
+    font-size: 20px;
+    z-index: 50
   }
   
+  /* Background Colours of the top and Bottom Section */
   .top-section {
-  background: linear-gradient(0turn, #75a4f0, #ee7674);
-  color: #333;
-  text-align: center;
-  width: 100%;
-  height: 700px;
-  padding-top: 100px;
+    background: linear-gradient(0turn, #75a4f0, #ee7674);
+    color: #333;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    padding-top: 100px;
   }
-  
+
+  .bottom-section {
+    background: linear-gradient(0turn, #f075a4, #74ee76);
+    color: #333;
+    text-align: center;
+    width: 100%;
+    height: 2500px;
+    padding-top: 247px;
+    display: flex;
+    justify-content: space-between;
+    }
+
   .divider{
-  text-align: center;
+    text-align: center;
   }
-  
+
+  /* Properties in the top-section background */
   .arrow{
-  width: 125px;
-  height: auto;
-  position: absolute;
-  left: 45%;
-  top: 500px;
-  transform: translateX(-50%);
-  animation: updown 3s ease-in-out infinite;
+    width: 125px;
+    height: auto;
+    position: absolute;
+    left: 45%;
+    top: 500px;
+    transform: translateX(-50%);
+    animation: updown 3s ease-in-out infinite;
   }
-  
+  /* Animation for the arrow going up and down */
   @keyframes updown {
   0% {
   transform: translateY(0);
@@ -56,172 +70,161 @@ html, body {
   transform: translateY(0);
   }
   }
-  
-  .bottom-section {
-  background: linear-gradient(0turn, #f075a4, #74ee76);
-  color: #333;
-  text-align: center;
-  width: 100%;
-  height: 2500px;
-  padding-top: 247px;
-  display: flex;
-  justify-content: space-between;
-  }
-  
-  .title {
-  text-align: center;
-  font-size: 150px;
-  margin: 10px 0;
-  margin-top: 25px;
+
+  .name-title {
+    text-align: center;
+    font-size: 150px;
+    margin: 10px 0;
+    margin-top: 25px;
   }
   
   .animation-title {
-  position: relative;
-  display: inline-block;
-  color: #0e0808;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 67px;
-  margin-top: 160px;
+    position: relative;
+    display: inline-block;
+    color: #0e0808;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 67px;
+    margin-top: 160px;
   }
   
   .blinking-cursor {
-  display: inline-block;
-  margin-left: 5px;
-  font-size: 100px;
-  color: #0e0808;
-  animation: blink 1s step-end infinite;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 100px;
+    color: #0e0808;
+    animation: blink 1s step-end infinite;
   }
-  
+  /* Animation for the blinking cursor */
   @keyframes blink {
   0%, 50% { opacity: 1; }
   50.01%, 100% { opacity: 0; }
   }
   
+  /* Image boxes, pictures and text for "About Me" Section */
   .image-box1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 300px;
-  height: 300px;
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
-  margin-left: 500px;
-  transform: translateY(-425px)
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
+    margin-left: 500px;
+    transform: translateY(-425px)
   }
   
-  .aboutmepic{
-  width: 290px;
-  height: auto;
-  position: absolute;
-  left: 50%;
-  top: 856px;
-  transform: translateX(-76%);
-  border-radius: 20px
+  .aboutmepic {
+    width: 290px;
+    height: auto;
+    position: absolute;
+    top: 855px;
+    transform: translateX(-68.5%);
+    border-radius: 20px;
   }
   
   .aboutme-heading-text {
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
-  display: flex;
-  margin-bottom: 10px;
-  margin-left: 50px;
-  transform: translateY(-180px)
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    transform: translateY(-180px)
   }
   
   .aboutme-listed-text {
-  color: black;
-  font-size: 20px;
-  display: block;
-  margin-bottom: 5px;
-  text-align: left;
-  margin-left: 10px;
-  transform: translateY(-170px)
+    color: black;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 10px;
+    transform: translateY(-170px)
   }
   
+  /* Image boxes, pictures and text for "Hobbies" Section */
   .image-box2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 300px;
-  height: 277px;
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
-  margin-left: 650px;
-  transform: translateY(-375px)
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 300px;
+    height: 277px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
+    margin-left: 650px;
+    transform: translateY(-375px)
   }
   
   .hobbies-heading-text{
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
-  display: flex;
-  margin-bottom: 10px;
-  margin-left: 1295px;
-  transform: translateY(-660px)
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    margin-left: 1295px;
+    transform: translateY(-660px)
   }
   
   .hobbies-listed-text {
-  color: black;
-  font-size: 20px;
-  display: block;
-  margin-bottom: 5px;
-  text-align: right;
-  margin-right: 4px;
-  transform: translateY(-650px)
+    color: black;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+    transform: translateY(-650px)
   }
   
   .hobbiespic{
-  width: 290px;
-  height: auto;
-  position: absolute;
-  top: 1211px;
-  transform: translateX(-17.5%);
-  border-radius: 20px
+    width: 290px;
+    height: auto;
+    position: absolute;
+    top: 1211px;
+    transform: translateX(-17.5%);
+    border-radius: 20px
   }
   
   .basketballpic{
-  width: 175px;
-  height: auto;
-  position: absolute;
-  right: 50%;
-  top: 1625px;
-  transform: translateX(350%);
-  border-radius: 20px
+    width: 175px;
+    height: auto;
+    position: absolute;
+    right: 50%;
+    top: 1625px;
+    transform: translateX(350%);
+    border-radius: 20px
   }
   
+  /* Image boxes, pictures and text for "Sports" Section */
   .image-box3 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 300px;
-  height: 300px;
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
-  margin-left: 500px;
-  transform: translateY(-500px)
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 300px;
+    height: 315px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
+    margin-left: 500px;
+    transform: translateY(-500px)
   }
   
   .right-arrow {
-  width: 125px;
-  height: auto;
-  position: absolute;
-  right: 365px;
-  top: 1685px;
-  transform: translateX(50%);
-  animation: leftright 3s ease-in-out infinite;
+    width: 125px;
+    height: auto;
+    position: absolute;
+    right: 365px;
+    top: 1685px;
+    transform: translateX(50%);
+    animation: leftright 3s ease-in-out infinite;
   }
-  
+  /* Animation for the right-arrow going right and left continuously */
   @keyframes leftright {
   0% {
   transform: translateX(50%) translateY(0);
@@ -239,7 +242,6 @@ html, body {
   font-size: 25px;
   transform: translateY(-810px);
   margin-left: 750px
-  
   }
   
   .sports-heading-text {
@@ -265,13 +267,14 @@ html, body {
   .sportspic{
     width: 290px;
     height: 290px;
+    height: auto;
     position: absolute;
-    left: 50%;
-    top: 1570px;
-    transform: translateX(-76%);
-    border-radius: 20px
-    }
+    top: 1571px;
+    transform: translateX(-68.5%);
+    border-radius: 20px;
+  }
   
+  /* Image boxes, pictures and text for "DP Subjects" Section */
   .subjects-container{
   display: flex;
   justify-content: center;
@@ -306,30 +309,31 @@ html, body {
   transform: translateY(-660px)
   }
   
+  /* Using a container for organization of the subject boxes in parallel form using flexbox */
   .subjects-text-container{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 60px;
-  padding: 20px 60px 60px;
-  transform: translateX(25px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 20px 60px 60px;
+    transform: translateX(25px);
   }
   
   .subject-text-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transform: translateY(-50px);
-  width: 200px;
-  height: 80px;
-  border: 2px solid black;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50px);
+    width: 200px;
+    height: 80px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
   }
   
   .englishpic{
@@ -343,59 +347,58 @@ html, body {
     }
   
   .mathpic{
-      width: 190px;
-      height: 190px;
-      position: absolute;
-      top: 80x;
-      translate: 0px 633px;
-      border-radius: 5px;
-      z-index: 676767676767
-      }
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 80x;
+    translate: 0px 633px;
+    border-radius: 5px;
+    z-index: 676767676767
+    }
 
   .physicspic{
-        width: 190px;
-        height: 190px;
-        position: absolute;
-        top: 80x;
-        translate: 263px 633px;
-        border-radius: 5px;
-        z-index: 676767676767
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 80x;
+    translate: 263px 633px;
+    border-radius: 5px;
+    z-index: 676767676767
         }
   
   .computersciencepic{
-      width: 190px;
-      height: 190px;
-      position: absolute;
-      top: 80x;
-      translate: -264px -275px;
-      border-radius: 5px;
-      z-index: 676767676767
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 80x;
+    translate: -264px -275px;
+    border-radius: 5px;
+    z-index: 676767676767
       }
   
   .chinesepic{
-        width: 190px;
-        height: 190px;
-        position: absolute;
-        top: 80x;
-        translate: 0px -275px;
-        border-radius: 5px;
-        z-index: 676767676767
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 80x;
+    translate: 0px -275px;
+    border-radius: 5px;
+    z-index: 676767676767
         }
       
   .economicspic{
-      width: 190px;
-      height: 190px;
-      position: absolute;
-      top: 80x;
-      translate: 264px -275px;
-      border-radius: 5px;
-      z-index: 676767676767
-      }
+    width: 190px;
+    height: 190px;
+    position: absolute;
+    top: 80x;
+    translate: 264px -275px;
+    border-radius: 5px;
+    z-index: 676767676767
+    }
 
-  
   .highlight-yellow{
-  background-color: yellow;
-  color: black;
+    background-color: yellow;
+    color: black;
   }
   
   .highlight-green{
@@ -552,7 +555,7 @@ html, body {
     top: 700px
   }
 
-  .title{
+  .name-title{
     font-size: 90px
   }
   
@@ -563,32 +566,75 @@ html, body {
   }
 
   .hobbies-heading-text{
-    top: 500px
-  }
-  .hobbies-listed-text{ 
-    display: flex;
-    justify-content: left;
-    transform: translateX(-40px);
+    transform: translateX(-50px);
     top: -500px
   }
   
-  .hobbiespic, .sportspic, .basketballpic,
+  .hobbies-listed-text{ 
+    display: flex;
+    transform: translateX(-40px);
+    top: -500px
+  }
+
+  .sports-heading-text{
+    transform: translateX(-50px);
+    top: -780px
+  }
+
+  .sports-listed-text{ 
+    display: flex;
+    justify-content: left;
+    transform: translateX(-50px);
+    top: -775px
+  }
+
+  .subjects-heading-text{
+    transform: translateX(-50px);
+    top: -780px
+  }
+
+  .subject-text-box{
+    transform: translateX(-50px);
+    top: -775px
+  }
+
+  .subject-text-box2{
+    transform: translateX(-50px);
+    top: -775px
+  }
+  
+  .hobbiespic {
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 1850px;
+    margin-left: -120px; 
+  }
+
+  .sportspic {
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 2150px;
+    margin-left: 28px; 
+  }
+
   .computersciencepic, .chinesepic, .economicspic,
   .englishpic, .mathpic, .physicspic, .subjects-container, .right-arrow{
    display: none
   }
-  
-  .aboutmepic{
-    display:none
-  }
-  
+
   .contact-me-container {
     max-width: 95vw ;
     position: relative;
     margin: 40px auto ;
-    top: -600px
+    top: -1250px
   }
+
+  .contact-header-text{
+    top: -650px
+  }
+
 }
 
 
-  
