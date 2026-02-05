@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <!-- Allows me to access and display all characters -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
 
@@ -155,6 +156,7 @@
 
   <script src="https://unpkg.com/ityped@0.0.10"></script>
 
+  <!-- Script for Varied animated titles that is displayed in my introduction -->
   <script>
     window.ityped.init(document.querySelector('.animation-title'), {
       strings: [
@@ -174,6 +176,7 @@
     });
   </script>
 
+  <!-- Script for smooth scroll for different propertieis such as the about me button on the navigation bar -->
   <script>
     document.querySelectorAll('a[href="#arrowdirector"]').forEach(button => {
       button.addEventListener('click', e => {

@@ -386,7 +386,7 @@ html, body {
     z-index: 676767676767
         }
       
-  .economicspic{
+.economicspic{
     width: 190px;
     height: 190px;
     position: absolute;
@@ -396,17 +396,17 @@ html, body {
     z-index: 676767676767
     }
 
-  .highlight-yellow{
+.highlight-yellow{
     background-color: yellow;
     color: black;
   }
   
-  .highlight-green{
+.highlight-green{
   background-color: lime;
   color: black;
   }
   
-  .subject-box2{
+.subject-box2{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -420,32 +420,33 @@ html, body {
   transform: translateY(625px);
   }
   
-  .subject-text-box2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-50px);
-    width: 200px;
-    height: 80px;
-    border: 2px solid black;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    transform: translateY(575px);
+.subject-text-box2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50px);
+  width: 200px;
+  height: 80px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 4px 8px 5px 0 rgba(13, 6, 6, 0.3);
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  transform: translateY(575px);
   }
 
-  .contact-header-text{
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    transform: translateY(-595px)
-    }
+/* Image boxes, pictures and text for "Contact Me" Section */
+.contact-header-text{
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-595px)
+  }
 
 .contact-me-container {
   width: 650px;
@@ -512,6 +513,7 @@ html, body {
   box-shadow: 0 5px 15px rgba(30,60,114,0.4);
 }
 
+  /* Screen: 430x932 px (Iphone 14 Pro Max) */
 @media only screen and (max-width: 430px) {
   * {
     max-width: 100vw;
@@ -541,6 +543,7 @@ html, body {
     gap: 4px;
     flex-wrap: wrap;
   }
+  
   .navigation-bar-text {
     font-size: 12px;
     padding: 2px 6px;
@@ -619,7 +622,7 @@ html, body {
     margin-left: 28px; 
   }
 
-  .computersciencepic, .chinesepic, .economicspic,
+  .aboutmepic, .computersciencepic, .chinesepic, .economicspic,
   .englishpic, .mathpic, .physicspic, .subjects-container, .right-arrow{
    display: none
   }
